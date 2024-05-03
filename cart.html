@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Me-Kaya</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#"><img src="logo.png" class="logo" alt="" height="100px" ></a>
+            <div>
+                <ul id="navbar">
+                    <li><a  href="Home.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a  href="about.html">About</a></li>
+                    <li><a  href="contact.html">Contact</a></li>
+                    <li><a class="active" href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+                    
+                </ul>
+            </div>
+            <div id="mobile"> 
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+                <i id="bar" class="fa fa-outdent"></i>
+            </div>
+        </section>
+
+        <section id="page-header2" class="about-header">
+            <h4>#YOUR SHOPPING CART</h4>
+          
+        </section>
+
+        
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+                <thead>
+                    
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td >Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <td><img src="product.jpg"></td>
+                        <td>Bundle 3</td>
+                        <td>₱ 2500</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal32(this)"></td>
+                        <td>₱ 2500</td>
+                        <td><button onclick="buyItem32(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><img src="https://ars.els-cdn.com/content/image/3-s2.0-C20150059561-cov200h.gif"></td>
+                        <td>General Chemistry for Engineers</td>
+                        <td>₱ 400</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal(this)"></td>
+                        <td>₱ 400</td>
+                        <td><button onclick="buyItem(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><img src="https://ph-live-01.slatic.net/p/101feecd987f02c38bd9550517876ff2.jpg"></td>
+                        <td>Differential and Integral Calculus 6th edition</td>
+                        <td>₱ 169</td>
+                        <td><input type="number" value="1" value="1" onchange="calculateSubtotal2(this)"></td>
+                        <td>₱ 169</td>
+                        <td><button onclick="buyItem2(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        
+                        <td><img src="https://ph-live-01.slatic.net/p/101feecd987f02c38bd9550517876ff2.jpg"></td>
+                        <td>Differential and Integral Calculus 6th edition</td>
+                        <td>₱ 169</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal3(this)"></td>
+                        <td>₱ 169</td>
+                        <td><button onclick="buyItem3(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                     
+                        <td><img src="https://pictures.abebooks.com/isbn/9789810681340-us.jpg"></td>
+                        <td>Engineering Mechanics: Statics</td>
+                        <td>₱ 230</td>
+                        <td><input type="number" value="1"onchange="calculateSubtotal4(this)"></td>
+                        <td>₱ 230</td>
+                        <td><button onclick="buyItem4(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                       
+                        <td><img src="https://filebroker-cdn.lazada.com.ph/kf/S43cdf4025fba42a18a2e9eb528fc7f392.jpg"></td>
+                        <td> Statics and Dynamics (3rd edition)</td>
+                        <td>₱ 249</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal5(this)"></td>
+                        <td>₱ 249</td>
+                        <td><button onclick="buyItem5(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                  
+                        <td><img src="https://img.lazcdn.com/g/p/98a752a941390c219b8f422644fc66b2.jpg_720x720q80.jpg"></td>
+                        <td>Fluid Mechanics and Hydraulics 4th Edition</td>
+                        <td>₱ 210</td>
+                        <td><input type="number" value="1"onchange="calculateSubtotal6(this)"></td>
+                        <td>₱ 210</td>
+                        <td><button onclick="buyItem6(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                     
+                        <td><img src="https://i0.wp.com/www.engineering-math.org/wp-content/uploads/2023/05/Solution-Manual-Cover-1.png?resize=625%2C809&ssl=1 "></td>
+                        <td>Strength of Materials (4th Edition)</td>
+                        <td>₱ 199</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal7(this)"></td>
+                        <td>₱ 199</td>
+                        <td><button onclick="buyItem7(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                     
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lRoORrFv4Qhq6Q2-KlWj1p7ycj2sPBVf72WPpW3Frg&s "></td>
+                        <td>Fundamentals of Vibration </td>
+                        <td>₱ 199</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal8(this)"></td>
+                        <td>₱ 199</td>
+                        <td><button onclick="buyItem8(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                       
+                        <td><img src="https://cdn.gintaa.com/offers/image/202245/18ace843MUJR6VCHlkvymt/2RUn8HpNM5flHJ7WjJ1fXj_Kaagaz202204051528029343928.jpg "></td>
+                        <td>Design of Machine Elements (4th Edition)</td>
+                        <td>₱ 169</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal9(this)"></td>
+                        <td>₱ 169</td>
+                        <td><button onclick="buyItem9(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                    
+                        <td><img src="https://images-eu.ssl-images-amazon.com/images/I/81WfBjfrjbL._AC_UL210_SR210,210_.jpg "></td>
+                        <td>Refrigeration and Air  Conditioning (3rd edition)</td>
+                        <td>₱ 149</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal10(this)"></td>
+                        <td>₱ 149</td>
+                        <td><button onclick="buyItem10(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                    
+                        <td><img src="https://images-na.ssl-images-amazon.com/images/P/0070665915.01.LZZZZZZZ.jpg"></td>
+                        <td>Refrigeration
+                            and Air
+                            Conditioning
+                            </td>
+                        <td>₱ 169</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal11(this)"></td>
+                        <td>₱ 169</td>
+                        <td><button onclick="buyItem11(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                      
+                        <td><img src="https://img.lazcdn.com/g/ff/kf/Sc703499733d841c48fb09c813cb0256cE.jpg_720x720q80.jpg"></td>
+                        <td>Engineering Economy (3rd edition)</td>
+                        <td>₱ 179</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal12(this)"></td>
+                        <td>₱ 179</td>
+                        <td><button onclick="buyItem12(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://imgv2-1-f.scribdassets.com/img/document/443434526/original/e035f91e0a/1707099414?v=1"></td>
+                        <td>Machine Design: A Simplified Approach </td>
+                        <td>₱ 149</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal13(this)"></td>
+                        <td>₱ 149</td>
+                        <td><button onclick="buyItem13(this)">buy</button></td>
+                    </tr>
+
+                    <tr>
+                
+                        <td><img src="https://filebroker-cdn.lazada.com.ph/kf/Sa75b874d218d41119bb90b30c443c938Q.jpg"></td>
+                        <td>Prime’s Industrial Plant  Engineering</td>
+                        <td>₱ 270</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal14(this)"></td>
+                        <td>₱ 270</td>
+                        <td><button onclick="buyItem14(this)">buy</button></td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td><img src="https://filebroker-cdn.lazada.com.ph/kf/S829075f9b05a4d198e3d81982b74555fB.jpg"></td>
+                        <td>R.S. Capote, C.G.  Duaso, J.A. Mandawe</td>
+                        <td>₱ 169</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal15(this)"></td>
+                        <td>₱ 169</td>
+                        <td><button onclick="buyItem15(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                      
+                        <td><img src="https://img.yumpu.com/20797298/1/500x640/electropneumatics-basic-level-festo-didactic.jpg"></td>
+                        <td>Electropneumati cs Basic Level</td>
+                        <td>₱ 50</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal16(this)"></td>
+                        <td>₱ 50</td>
+                        <td><button onclick="buyItem16(this)">buy</button></td>
+                    </tr>
+                    <tr>
+      
+                        <td><img src="https://imgv2-2-f.scribdassets.com/img/document/514073561/original/0cfa400641/1710395740?v=1"></td>
+                        <td>Power Plant Theory and Design, 2nd Edition</td>
+                        <td>₱ 499</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal17(this)"></td>
+                        <td>₱ 499</td>
+                        <td><button onclick="buyItem17(this)">buy</button></td>
+                    </tr>
+                    <tr>
+
+                        <td><img src="https://ph-test-11.slatic.net/p/19b3d2afc8666bac4a1ae3aa85ad8900.jpg"></td>
+                        <td>Power Plant Engineering  Updated Versions</td>
+                        <td>₱ 199</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal18(this)"></td>
+                        <td>₱ 199</td>
+                        <td><button onclick="buyItem18(this)">buy</button></td>
+                    </tr>
+                    <tr>
+     
+                        <td><img src="https://filebroker-cdn.lazada.com.ph/kf/S3f0b9a08bf6045cba7e006478be97aeaY.jpg"></td>
+                        <td>Power Plant Engineering</td>
+                        <td>₱ 189</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal19(this)"></td>
+                        <td>₱ 189</td>
+                        <td><button onclick="buyItem19(this)">buy</button></td>
+                    </tr>
+                    <tr>
+          
+                        <td><img src="https://m.media-amazon.com/images/I/61KcRxgn+cL._AC_UF1000,1000_QL80_.jpg"></td>
+                        <td>Heat and Mass Transfer: 5th Edition</td>
+                        <td>₱ 50</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal20(this)"></td>
+                        <td>₱ 50</td>
+                        <td><button onclick="buyItem20(this)">buy</button></td>
+                    </tr>
+                    <tr>
+          
+                        <td><img src="https://m.media-amazon.com/images/I/71MNYqwEtmL._AC_UF1000,1000_QL80_.jpg"></td>
+                        <td>Mark's Standard Handbook for Engineers, 12th Edition</td>
+                        <td>₱ 10</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal21(this)"></td>
+                        <td>₱ 10</td>
+                        <td><button onclick="buyItem21(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://ph-test-11.slatic.net/p/b5f995b072f61f15029d54c6ee708e04.jpg"></td>
+                        <td>Thermodynamics 2</td>
+                        <td>₱ 170</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal22(this)"></td>
+                        <td>₱ 170</td>
+                        <td><button onclick="buyItem22(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://ph-test-11.slatic.net/p/b5f995b072f61f15029d54c6ee708e04.jpg"></td>
+                        <td>THERMODYNA MICS 1</td>
+                        <td>₱ 249 </td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal23(this)"></td>
+                        <td>₱ 249</td>
+                        <td><button onclick="buyItem23(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://projectworkshopph.com/cdn/shop/files/PWStaedtlerCanister23.5.png?v=1692180487&width=1445"></td>
+                        <td>Canister Tube</td>
+                        <td>₱ 140</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal24(this)"></td>
+                        <td>₱ 140</td>
+                        <td><button onclick="buyItem24(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.spotlightstores.com/medias/BP80600373-black-2.jpg-SPOTWF-productHero?context=bWFzdGVyfGltYWdlc3wyMTg4OXxpbWFnZS9qcGVnfGltYWdlcy9oMjMvaGViLzE0OTI0MDMzMDMyMjIyL0JQODA2MDAzNzMtYmxhY2tfMi5qcGdfU1BPVFdGX3Byb2R1Y3RIZXJvfGVjYTk2ZThlMzA3ZDA4YTI4NDM0MDc2OWUxNmFiYWMwMTUwODNjZjdmY2IwOGRlN2I2YWRhMDcwMTY2MThiNGY"></td>
+                        <td>LED Light Pad A</td>
+                        <td>₱ 250</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal25(this)"></td>
+                        <td>₱ 250</td>
+                        <td><button onclick="buyItem25(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzGnve601bAw0dYZncl0mNZmd6puH2ozyVg6d47vspgg&s"></td>
+                        <td>Deli Compas</td>
+                        <td>₱ 70</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal26(this)"></td>
+                        <td>₱ 70</td>
+                        <td><button onclick="buyItem26(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://hbw.ph/wp-content/uploads/2017/10/hbw-mechanical-pencil-mp-205-black-1-1-1.jpg"></td>
+                        <td>Mechanical Pencil</td>
+                        <td>₱ 35</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal27(this)"></td>
+                        <td>₱ 35</td>
+                        <td><button onclick="buyItem27(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://www.dontwasteyourmoney.com/wp-content/uploads/2020/11/arteza-triangular-architect-scale-ruler-12-inch-ruler.jpg"></td>
+                        <td>Scale (Ruler)</td>
+                        <td>₱ 30</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal28(this)"></td>
+                        <td>₱ 30</td>
+                        <td><button onclick="buyItem28(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnbCsspOzyIvFHGX2C_K41f623irmC2qSBespo97_1uw&s"></td>
+                        <td>Deli Protractor</td>
+                        <td>₱ 10</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal29(this)"></td>
+                        <td>₱ 10</td>
+                        <td><button onclick="buyItem29(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://projectworkshopph.com/cdn/shop/files/DiamantFrenchCurveSet3s.v01.png?v=1692733196"></td>
+                        <td>French curves </td>
+                        <td>₱ 70</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal30(this)"></td>
+                        <td>₱ 70</td>
+                        <td><button onclick="buyItem30(this)">buy</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://img.ws.mms.shopee.ph/89835b38e6f7c5038c691f8a5db38cb2"></td>
+                        <td>Triangles</td>
+                        <td>₱ 40</td>
+                        <td><input type="number" value="1" onchange="calculateSubtotal31(this)"></td>
+                        <td>₱ 40</td>
+                        <td><button onclick="buyItem31(this)">buy</button></td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+    
+        
+        <footer class="section-p1">
+            <div class="col">
+                <img src="logo.png" height="90px">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> La trinidad Benguet</p>
+                <p><strong>Phone:</strong> 09127482912</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                     <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <h4>About</h4>
+                <a href="about.html">About Us</a>
+                <a href="Help.html">Help Center</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="index.html">Sign in</a>
+                <a href="#">View Cart</a>
+            </div>
+
+            <div class="col pay">
+                <h4>Payment Methods Accepted</h4>
+                <div class="row">
+                <img src="//upload.wikimedia.org/wikipedia/commons/thumb/5/52/GCash_logo.svg/1280px-GCash_logo.svg.png " width="100px" height="25px">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/BDO_Unibank_%28logo%29.svg/1200px-BDO_Unibank_%28logo%29.svg.png" width="100px" height="20px">
+            </div>
+            </div>
+
+            <div class="copyright">
+                <p>©2024 me-kaya. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
